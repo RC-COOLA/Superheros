@@ -94,15 +94,15 @@ class Superhero {
         return name;
     }
 
-    // Getter for power level
+    // Getter power level
     public int getPowerLevel() {
         return powerLevel;
     }
 
     // Display hero details
     public void displayHero() {
-        System.out.println("Name: " + name);
-        System.out.println("Ability: " + ability);
-        System.out.println("Power Level: " + powerLevel);
+    System.out.println("Name: " + name);
+    System.out.println("Ability: " + ability);
+    System.out.println("Power Level: " + powerLevel);
     }
 }
