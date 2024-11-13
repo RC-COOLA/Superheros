@@ -5,7 +5,6 @@ import java.util.Comparator;
 public class SuperheroRoster {
 
     public static void main(String[] args) {
-        // This is the superhero data
         Superhero[] heroes = {
             new Superhero("Thor", "Thunder", 10),
             new Superhero("Iron Man", "Strength", 8),
@@ -19,12 +18,11 @@ public class SuperheroRoster {
             System.out.println();
         }
 
-        // Input favorite superhero
+        
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your favorite superhero: ");
         String superhero = input.nextLine();
 
-        // Search for a superhero by name
         int index = findName(heroes, superhero);
         if (index != -1) {
             System.out.println("Hero found.");
