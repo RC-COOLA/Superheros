@@ -1,3 +1,4 @@
+//imports
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -38,7 +39,7 @@ public class SuperheroRoster {
         sortHeroesByPower(heroes);
     }
 
-    // Find a hero by name
+    // Find name
     public static int findName(Superhero[] heroes, String target) {
         for (int i = 0; i < heroes.length; i++) {
             if (heroes[i].getName().equalsIgnoreCase(target)) {
@@ -80,7 +81,7 @@ class Superhero {
     private String ability;
     private int powerLevel;
 
-    // Constructor to initialize attributes
+    // Constructor to initialize the attributes
     public Superhero(String name, String ability, int powerLevel) {
         this.name = name;
         this.ability = ability;
@@ -99,8 +100,8 @@ class Superhero {
 
     // Display hero details
     public void displayHero() {
-    System.out.println("Name: " + name);
-    System.out.println("Ability: " + ability);
-    System.out.println("Power Level: " + powerLevel);
+    System.out.println("Name:" + name);
+    System.out.println("Ability:" + ability);
+    System.out.println("Power Level:" + powerLevel);
     }
 }
